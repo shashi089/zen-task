@@ -1,0 +1,60 @@
+1)
+var obj = [
+{ person: "Ajit", age: "2", company: "GUVI" },
+{ person: "Surya", age: "5", company: "GUVI geek" },
+{ person: "Vijay", age: "8", company: "GUVI geek network" },
+]
+
+* for loop;-
+
+   for(let i =0;i<obj.length;i++){
+     console.log(obj[i]);
+    }
+
+* for in loop:-
+
+   for(var property in obj){
+     console.log(obj[property]);
+   }
+
+* for of loop:-
+
+   for(var property of obj){
+    console.log(property);
+   }
+
+* for each loop:-
+
+  obj.forEach(key => console.log(key));
+
+
+2)code to display all the country flags in console
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  for (var i = 0; i < data.length; i++) {
+    console.log(data[i].flag);
+  }
+}
+xhr.send()
+
+3)code to print all countries name, region, sub region and population
+.
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  for (var i = 0; i < data.length; i++) {
+    console.log(
+      ' name :' + data[i].name,
+      ' region :' + data[i].region,
+      ' sub-region :' + data[i].subregion,
+      ' population :' + data[i].population
+    );
+  }
+}
+xhr.send()
