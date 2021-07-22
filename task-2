@@ -13,14 +13,14 @@ var obj = [
 
 * for in loop:-
 
-   for(var property in obj){
-     console.log(obj[property]);
+   for(var element in obj){
+     console.log(obj[element]);
    }
 
 * for of loop:-
 
-   for(var property of obj){
-    console.log(property);
+   for(var element of obj){
+    console.log(element);
    }
 
 * for each loop:-
