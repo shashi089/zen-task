@@ -1,0 +1,49 @@
+var data = {
+  dimensions: {
+    oaverall_length: '3500mm',
+    oaverall_width: '1600mm',
+    oaverall_height: '1490mm',
+    wheelbase: '2360mm',
+    track_width: {
+      front: '1405mm',
+      rear: '1400mm',
+    },
+    minimum_turining_radius: '4.5m',
+    minimum_ground_radius: '170mm',
+  },
+
+  capacities: {
+    seating_capacity: '5',
+    fuel_tank_capacity: '35l',
+  },
+
+  engine: {
+    type: 'KB-series',
+    number_of_cylinders: '3',
+    number_of_valves: '12',
+    capacity: '998 cc/cm',
+    bore_x_stroke: '73.0*79.5',
+    compression_ratio: '10.1',
+    maximum_power: '67/6.200',
+    maximum_torque: '90/3.500',
+    fuel_distribution: 'Multipoint Injection ',
+  },
+  transmission: {
+    type: '5-speed MT',
+  },
+  chassis: {
+    streeing: 'Rack & Pinion,Power',
+    brakes: {
+      front: 'ventilated discs',
+      rear: 'drums',
+    },
+    suspension: {
+      front: 'MacPherson strut & coil spring',
+      rear: 'isolated trailling',
+    },
+    shock_absorbes: 'gas filled',
+    tyre_tubeless: '155/80R13',
+  },
+  kerb_weight: '860-880kg',
+  gross_vehicle_weighr: '1320kg',
+}
